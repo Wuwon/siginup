@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>광주인공지능 사관학교</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
     <h1>회원가입</h1>
     <form action="" method="POST">
-        <label for="userid_inpput">이메일</label>
-        <input
-         id="userid_inpput"
-         name="userid"
-         placeholder="input your ID" 
-         type="text"/>
-        </br>
-        
-        <label for="userpw">패스워드</label>
-        <input 
-        name="userpw" 
-        placeholder="input your password"
-        type="text"/></br>
+        <div class="emailbox">
+            <label for="userid_inpput">이메일</label>
+            <input
+            id="userid_inpput"
+            name="userid"
+            placeholder="input your ID" 
+            type="text"/>
+        </div>
+    </br>
+        <div class="passbox">
+            <label for="userpw">패스워드</label>
+            <input 
+            name="userpw" 
+            placeholder="input your password"
+            type="text"/></br>
+        </div>
         <select name="pwhint">
             <option value="hint1">고향은?</option>
             <option value="hint2">가장 친한 친구는?</option>
         </select>
-
-        <textarea name="content" "></textarea></br>
-        <textarea name="intro" ">자기 소개</textarea>
+    </br>
+        <textarea name="content"></textarea></br>
+        <textarea name="intro">자기 소개</textarea>
         <button type="submit">전송하기</button>
     </form>
+        <img src="https://source.unsplash.com/random" alt="img" class="img1"/>
+   
 </body>
 </html>
